@@ -37,7 +37,7 @@ button {
     width: 210px;
 }
 
-button:active {
+button:hover {
     background-color: #3BC172;
 }
 
@@ -64,10 +64,30 @@ button:active {
 
 .data:hover {
     cursor: pointer;
+    background-color: #1E2A3A;
 }
 
-.data:active {
-    background-color: #1E2A3A;
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-75%);
+    background-color: #10B981;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    font-size: 14px;
+    /* transform: translate(-60px, -80px); */
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 button:hover {

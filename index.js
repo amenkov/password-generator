@@ -31,6 +31,15 @@ async function copy(textToCopy) {
   try {
     await navigator.clipboard.writeText(textToCopy);
     console.log('Text successfully copied to clipboard');
+    
+    // Показать toast
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    
+    // Скрыть через 2 секунды
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2000);
   } catch (err) {
     console.error('Failed to copy text: ', err);
   }
