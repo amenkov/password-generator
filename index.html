@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Generate a <span class="green">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <button class="generate-btn" onclick="generatePwds()">Generate passwords</button>
+    </div>
+    
+    <div class="passwords">
+        <p class="data" id="1stPwd" onclick="copyToClipboard('1stPwd')"></p>
+        <p class="data" id="2ndPwd" onclick="copyToClipboard('2ndPwd')"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
