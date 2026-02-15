@@ -1,12 +1,18 @@
-
-
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
     background-color: #1C1C1C;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main {
     width: 550px;
     height: 550px;
+    transform: translate(-60px, -80px);
 }
 
 .green {
@@ -31,6 +37,10 @@ button {
     width: 210px;
 }
 
+button:active {
+    background-color: #3BC172;
+}
+
 .passwords {
     margin-left: 52px;
     border-top: 1px solid #2F3E53;
@@ -53,5 +63,13 @@ button {
 }
 
 .data:hover {
+    cursor: pointer;
+}
+
+.data:active {
+    background-color: #1E2A3A;
+}
+
+button:hover {
     cursor: pointer;
 }
